@@ -1,0 +1,55 @@
+{
+	"data" :[{
+		"nama_produk" : "SKINTIFIC 5X Ceramide Barrier Repair Moisturize Gel Moisturizer 30G & 6G",
+		"deskripsi": "Moisturizer yang menggabungkan 3 kandungan aktif Ceramide, Hyaluronic Acid, dan Centella Asiatica, untuk mengatasi permasalahan skin barrier yang rusak seperti jerawat, kemerahan, kulit bertekstur, dan juga kulit kering secara cepat namun tetap aman untuk skin barrier.",
+		"jenis_kulit": "Kombinasi",
+		"img": "skintific_ceramide.png",
+		"tipe_skincare": "pelembab",
+		"harga": "50000"
+		},{
+		"nama_produk" : "5X Ceramide Low PH Cleanser",
+		"deskripsi": "•Cleanser ini memiliki pH yang rendah (5.5~6) yang sangat sesuai dengan pH level kulit",
+		"jenis_kulit": "Kombinasi",
+		"img": "skintific_ceramide_cleanser.png",
+		"tipe_skincare": "sabun",
+		"harga": "99000"
+		},{
+		"nama_produk" : "Skintific 5% AHA/BHA Exfoliating Toner",
+		"deskripsi": "Toner yang satu ini mengandung gabungan 5% AHA, BHA, dan PHA yang bisa mengangkat sel kulit mati serta mengatasi sebum berlebih secara gentle.",
+		"jenis_kulit": "Kombinasi",
+		"img": "skintifi_ex_toner.png",
+		"tipe_skincare": "toner",
+		"harga": "120000"
+		},{
+		"nama_produk" : "Skintific 5X Ceramide Soothing Toner",
+		"deskripsi": "Produk itu bernama Skintific 5X Ceramide Soothing Toner. Seperti hydrating toner pada umumnya, skincare ini bisa digunakan sehari-hari.",
+		"jenis_kulit": "Kombinasi",
+		"img": "skintific_hydrating_toner.png",
+		"tipe_skincare": "toner",
+		"harga": "76000"
+		},{
+		"nama_produk" : "Skintific 4D Hyaluronic Acid Barrier Essence Toner",
+		"deskripsi": "Toner yang satu ini menggunakan teknologi HymagicTM-4D Technology, kombinasi 4 tipe hyaluronic acid untuk melembapkan kulit hingga pori-pori terdalam.",
+		"jenis_kulit": "Kombinasi",
+		"img": "4d_hydrating_toner.png",
+		"tipe_skincare": "toner",
+		"harga": "85000"
+		},{
+		"nama_produk" : "Skintific 10% Niacinamide Brightening Serum",
+		"deskripsi": "Skintific 10% Niacinamide Brightening Serum mengandung 10% Niacinamide (sama dengan Niacinamide pada SK-II) yang efektif untuk mencerahkan kulit dengan cepat, mengontrol minyak berlebih, dan menyamarkan noda hitam.",
+		"jenis_kulit": "Kombinasi",
+		"img": "niacinamide_skintific_serum.png",
+		"tipe_skincare": "serum",
+		"harga": "11000"
+		},{
+		"nama_produk" : "Skintific Gentle A-Retinol Renewal Serum",
+		"deskripsi": "Skintific Gentle A-Retinol Renewal Serum dilengkapi dengan 5x Ceramide dan 3D Peptide yang mampu mengunci kelembaban kulit, mencegah iritasi, serta mengurangi garis halus dan kerutan secara signifikan.",
+		"jenis_kulit": "Kombinasi",
+		"img": "skintific_retinol_serum.png",
+		"tipe_skincare": "serum",
+		"harga": "11000"
+		}
+
+
+	]
+}
