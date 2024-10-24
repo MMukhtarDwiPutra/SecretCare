@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
-
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-pink">
@@ -36,9 +35,6 @@
             <a class="nav-link color-custom" href="cari_product.html">Cari Product</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link color-custom" href="about_us.html">About Us</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link color-custom" href="contact_us.html">Contact Us</a>
           </li>
           <li class="nav-item">
@@ -54,14 +50,15 @@
   <section class="product-section py-5">
     <div class="container">
       <h2 class="text-center mb-5">Produk Kami</h2>
-        <div class="row" id="produk_item">
-        </div>
-        <!-- Pagination -->
-        <nav aria-label="Product Pagination">
-          <ul class="pagination" id="pagination">
-            <!-- Pagination item akan diisi secara dinamis oleh JavaScript -->
-          </ul>
-        </nav>
+      <div class="row" id="produk_item">
+        <!-- Produk akan diisi secara dinamis oleh JavaScript -->
+      </div>
+      <!-- Pagination -->
+      <nav aria-label="Product Pagination">
+        <ul class="pagination" id="pagination">
+          <!-- Pagination item akan diisi secara dinamis oleh JavaScript -->
+        </ul>
+      </nav>
     </div>
   </section>
 
@@ -78,6 +75,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script type="text/javascript">
+    let products;
+
     function fetchJSONData() {
         fetch("../assets/json/data.json")
             .then((res) => {
@@ -87,30 +86,46 @@
                 }
                 return res.json();
             })
-            .then((data) =>
-                  renderProducts(data.data))
+            .then((data) => {
+                    setProduct(data);
+                    renderPagination();
+                    renderProducts();
+                  })
             .catch((error) =>
                 console.error("Unable to fetch data:", error));
     }
-    fetchJSONData();
 
-    function renderProducts(data){
+    function setProduct(data) {
+        products = data.data
+    }
+
+    function renderProducts(){
+      const startIndex = (currentPage - 1) * itemsPerPage;
+      const endIndex = startIndex + itemsPerPage;
+      const paginatedProducts = products.slice(startIndex, endIndex);
+      
       produk_item = document.getElementById("produk_item");
-      data.forEach((produk, key) => {
+      produk_item.innerHTML = '';
+      paginatedProducts.forEach(produk => {
             produk_item.innerHTML += `<div class="col-md-4 col-sm-6 mb-4">
             <div class="card">
               <img src="../assets/img/${produk.img}" class="card-img-top" alt="Product 1">
               <div class="card-body">
                 <h5 class="card-title">${produk.nama_produk}</h5>
-                <p class="card-text">${produk.deskripsi}</p>
-                
+                <p class="card-text">${produk.deskripsi}</p>        
               </div>
             </div>
           </div>`
       });
     }
 
+    // Pagination Settings
+    const itemsPerPage = 6;
+    let currentPage = 1;
+
+    // Render Pagination Buttons
     function renderPagination() {
+      let totalPages = Math.ceil(products.length / itemsPerPage);
       const paginationContainer = document.getElementById('pagination');
       paginationContainer.innerHTML = '';
 
@@ -123,14 +138,15 @@
       }
     }
 
+    // Change Page
     function changePage(page) {
       currentPage = page;
       renderProducts();
       renderPagination();
     }
 
-    renderProducts();
-    renderPagination();
+    // Initial Render
+    fetchJSONData();
   </script>
 </body>
 <!-- <a href="#" class="btn btn-primary" style="background-color: #F4C2C2; border: none;">Lihat Detail</a> -->

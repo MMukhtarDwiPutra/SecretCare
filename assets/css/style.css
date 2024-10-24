@@ -82,7 +82,7 @@ html, body {
 }
 
 .carousel-inner{
-  height: 50vh;
+  height: 100vh;
 }
 
  .contact-header {
@@ -98,4 +98,8 @@ html, body {
 
 .form-control {
   border-radius: 0;
+}
+.pagination {
+  justify-content: center;
+  margin-top: 30px;
 }
