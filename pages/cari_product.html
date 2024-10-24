@@ -34,10 +34,10 @@
                 <a class="nav-link color-custom" href="cari_product.html">Cari Product</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link color-custom" href="contact_us.html">Contact Us</a>
+                <a class="nav-link color-custom" href="contact_us.php">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link color-custom" href="login.html">Login</a>
+                <a class="nav-link color-custom" href="login.php">Login</a>
               </li>
             </ul>
           </div>
@@ -45,6 +45,7 @@
     </nav>
     <div class="container mt-5">
         <h2 class="text-center mb-4">Pilih Produk Skincare Anda</h2>
+        <h4 class="text-center mb-4">Kami akan rekomendasikan skincare sesuai tipe skin dengan harga termurah!</h4>
         <form>
             <div class="form-group mb-2">
                 <label for="jenis_kulit">Jenis Kulit</label>
@@ -61,108 +62,113 @@
         </form>
     </div>
 
-    <div class="container bg-pink mt-5 mb-5">
-        <div class="row pb-4">
-            <div class="col-md-4">
-                <div class="card mt-3">
-                  <div class="card-header text-center">
-                      Sabun
-                  </div>
-                  <div class="card-body mt-1">
-                    <img class="card-img-top" id="img_sabun" src="../assets/img/unknown.png">
-                    <div class="card-title">
-                        <select class="form-control" id="sabun">
-                            <option>-- Pilih Sabun --</option>
-                        </select>
+    <div class="bg-pink rounded">
+        <div class="container mt-5 mb-5">
+            <div class="row pb-4">
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                      <div class="card-header text-center">
+                          Sabun
+                      </div>
+                      <div class="card-body mt-1">
+                        <img class="card-img-top mx-auto d-block" id="img_sabun" src="../assets/img/unknown.png">
+                        <div class="card-title mt-5">
+                            <select class="form-control" onchange="onChange('sabun')" id="sabun">
+                                <option>-- Pilih Sabun --</option>
+                            </select>
+                        </div>
+                        <p class="card-text" id="harga_sabun"></p>        
+                      </div>
                     </div>
-                    <p class="card-text" id="harga_sabun"></p>        
-                  </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                      <div class="card-header text-center">
+                          Toner
+                      </div>
+                      <div class="card-body mt-1">
+                        <img class="card-img-top mx-auto d-block" id="img_toner" src="../assets/img/unknown.png">
+                        <div class="card-title mt-5">
+                            <select class="form-control" id="toner">
+                                <option>-- Pilih Toner --</option>
+                            </select>
+                        </div>
+                        <p class="card-text" id="harga_toner"></p>        
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                      <div class="card-header text-center">
+                          Serum
+                      </div>
+                      <div class="card-body mt-1">
+                        <img class="card-img-top mx-auto d-block" id="img_serum" src="../assets/img/unknown.png">
+                        <div class="card-title mt-5">
+                            <select class="form-control" id="serum">
+                                <option>-- Pilih Serum --</option>
+                            </select>
+                        </div>
+                        <p class="card-text" id="harga_serum"></p>        
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                      <div class="card-header text-center">
+                          Krim Malam
+                      </div>
+                      <div class="card-body mt-1">
+                        <img class="card-img-top mx-auto d-block" id="img_krim_malam" src="../assets/img/unknown.png">
+                        <div class="card-title mt-5">
+                            <select class="form-control" id="krim_malam">
+                                <option>-- Pilih Krim Malam --</option>
+                            </select>
+                        </div>
+                        <p class="card-text" id="harga_krim_malam"></p>        
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                      <div class="card-header text-center">
+                          Krim Siang
+                      </div>
+                      <div class="card-body mt-1">
+                        <img class="card-img-top mx-auto d-block" id="img_krim_siang" src="../assets/img/unknown.png">
+                        <div class="card-title mt-5">
+                            <select class="form-control" id="krim_siang">
+                                <option>-- Pilih Krim Siang --</option>
+                            </select>
+                        </div>
+                        <p class="card-text" id="harga_krim_siang"></p>        
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                      <div class="card-header text-center">
+                          Masker
+                      </div>
+                      <div class="card-body mt-1">
+                        <img class="card-img-top mx-auto d-block" id="img_masker" src="../assets/img/unknown.png">
+                        <div class="card-title mt-5">
+                            <select class="form-control" id="masker">
+                                <option>-- Pilih Masker --</option>
+                            </select>
+                        </div>
+                        <p class="card-text" id="harga_masker"></p>        
+                      </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="card mt-3">
-                  <div class="card-header text-center">
-                      Toner
-                  </div>
-                  <div class="card-body mt-1">
-                    <img class="card-img-top" id="img_toner" src="../assets/img/unknown.png">
-                    <div class="card-title">
-                        <select class="form-control" id="toner">
-                            <option>-- Pilih Toner --</option>
-                        </select>
-                    </div>
-                    <p class="card-text" id="harga_toner"></p>        
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card mt-3">
-                  <div class="card-header text-center">
-                      Serum
-                  </div>
-                  <div class="card-body mt-1">
-                    <img class="card-img-top" id="img_serum" src="../assets/img/unknown.png">
-                    <div class="card-title">
-                        <select class="form-control" id="serum">
-                            <option>-- Pilih Serum --</option>
-                        </select>
-                    </div>
-                    <p class="card-text" id="harga_serum"></p>        
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card mt-3">
-                  <div class="card-header text-center">
-                      Krim Malam
-                  </div>
-                  <div class="card-body mt-1">
-                    <img class="card-img-top" id="img_krim_malam" src="../assets/img/unknown.png">
-                    <div class="card-title">
-                        <select class="form-control" id="krim_malam">
-                            <option>-- Pilih Krim Malam --</option>
-                        </select>
-                    </div>
-                    <p class="card-text" id="harga_krim_malam"></p>        
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card mt-3">
-                  <div class="card-header text-center">
-                      Krim Siang
-                  </div>
-                  <div class="card-body mt-1">
-                    <img class="card-img-top" id="img_krim_siang" src="../assets/img/unknown.png">
-                    <div class="card-title">
-                        <select class="form-control" id="krim_siang">
-                            <option>-- Pilih Krim Siang --</option>
-                        </select>
-                    </div>
-                    <p class="card-text" id="harga_krim_siang"></p>        
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card mt-3">
-                  <div class="card-header text-center">
-                      Masker
-                  </div>
-                  <div class="card-body mt-1">
-                    <img class="card-img-top" id="img_masker" src="../assets/img/unknown.png">
-                    <div class="card-title">
-                        <select class="form-control" id="masker">
-                            <option>-- Pilih Masker --</option>
-                        </select>
-                    </div>
-                    <p class="card-text" id="harga_masker"></p>        
-                  </div>
-                </div>
+            <div class="d-flex justify-content-end pb-3">
+                <b>Rp. </b><span id="total_harga"></span>
             </div>
         </div>
     </div>
@@ -199,138 +205,69 @@
             products = data.data
         }
 
-        function cariProduk(){
-            jenis_kulit = document.getElementById("jenis_kulit").value;
-            total_harga = 0;
+        function updateSkincareOptions(searched_products, type) {
+            const filtered_products = searched_products.filter(function (produk) {
+                return produk.tipe_skincare === type;
+            });
 
-            if(jenis_kulit != ""){
-                searched_products = products.filter(function(produk){
-                    return produk.jenis_kulit === "semua" || produk.jenis_kulit === jenis_kulit 
-                })
+            const selectElement = document.getElementById(type.replace(" ", "_")); // Replace space with underscore
+            selectElement.innerHTML = "";
 
+            filtered_products.forEach(produk => {
+                selectElement.innerHTML += `<option value="${produk.nama_produk.toLowerCase()}" selected>${produk.nama_produk}</option>`;
+            });
 
-                // Filter sabun section
-                filtered_products = searched_products.filter(function(produk){
-                    return produk.tipe_skincare === "sabun";
-                })
-
-                const sabunSelect = document.getElementById('sabun');
-                sabunSelect.innerHTML = ""
-                filtered_products.forEach(produk => {
-                    sabunSelect.innerHTML += `<option value="${produk.nama_produk.toLowerCase()}" selected>${produk.nama_produk}</option>`;
-                });
-
-                let minPriceProduct = filtered_products.reduce((minProduct, currentProduct) => {
+            if (filtered_products.length > 0) {
+                const minPriceProduct = filtered_products.reduce((minProduct, currentProduct) => {
                     return (currentProduct.harga < minProduct.harga) ? currentProduct : minProduct;
                 });
 
-                sabunSelect.selected = minPriceProduct.nama_produk
-                document.getElementById("img_sabun").src = `../assets/img/${minPriceProduct.img}`;
-                document.getElementById("harga_sabun").innerHTML = `Rp. ${minPriceProduct.harga}`;
-                total_harga += minPriceProduct.harga;
+                selectElement.selected = minPriceProduct.nama_produk.toLowerCase();
+                document.getElementById(`img_${type.replace(" ", "_")}`).src = `../assets/img/${minPriceProduct.img}`;
+                document.getElementById(`harga_${type.replace(" ", "_")}`).innerHTML = `Rp. ${minPriceProduct.harga.toLocaleString('id-ID')}`;
 
-                // Filter toner section
-                filtered_products = searched_products.filter(function(produk){
-                    return produk.tipe_skincare === "toner";
-                })
-
-                const tonerSelect = document.getElementById('toner');
-                tonerSelect.innerHTML = ""
-                filtered_products.forEach(produk => {
-                    tonerSelect.innerHTML += `<option value="${produk.nama_produk.toLowerCase()}" selected>${produk.nama_produk}</option>`;
-                });
-
-                minPriceProduct = filtered_products.reduce((minProduct, currentProduct) => {
-                    return (currentProduct.harga < minProduct.harga) ? currentProduct : minProduct;
-                });
-
-                tonerSelect.selected = minPriceProduct.nama_produk
-                document.getElementById("img_toner").src = `../assets/img/${minPriceProduct.img}`;
-                document.getElementById("harga_toner").innerHTML = `Rp. ${minPriceProduct.harga}`;
-                total_harga += minPriceProduct.harga;
-
-                // Filter serum section
-                filtered_products = searched_products.filter(function(produk){
-                    return produk.tipe_skincare === "serum";
-                })
-
-                const serumSelect = document.getElementById('serum');
-                serumSelect.innerHTML = ""
-                filtered_products.forEach(produk => {
-                    serumSelect.innerHTML += `<option value="${produk.nama_produk.toLowerCase()}" selected>${produk.nama_produk}</option>`;
-                });
-
-                minPriceProduct = filtered_products.reduce((minProduct, currentProduct) => {
-                    return (currentProduct.harga < minProduct.harga) ? currentProduct : minProduct;
-                });
-
-                serumSelect.selected = minPriceProduct.nama_produk
-                document.getElementById("img_serum").src = `../assets/img/${minPriceProduct.img}`;
-                document.getElementById("harga_serum").innerHTML = `Rp. ${minPriceProduct.harga}`;
-                total_harga += minPriceProduct.harga;
-
-                // Filter krim malam section
-                filtered_products = searched_products.filter(function(produk){
-                    return produk.tipe_skincare === "krim malam";
-                })
-
-                const krimMalamSelect = document.getElementById('krim_malam');
-                krimMalamSelect.innerHTML = ""
-                filtered_products.forEach(produk => {
-                    krimMalamSelect.innerHTML += `<option value="${produk.nama_produk.toLowerCase()}" selected>${produk.nama_produk}</option>`;
-                });
-
-                minPriceProduct = filtered_products.reduce((minProduct, currentProduct) => {
-                    return (currentProduct.harga < minProduct.harga) ? currentProduct : minProduct;
-                });
-
-                krimMalamSelect.selected = minPriceProduct.nama_produk
-                document.getElementById("img_krim_malam").src = `../assets/img/${minPriceProduct.img}`;
-                document.getElementById("harga_krim_malam").innerHTML = `Rp. ${minPriceProduct.harga}`;
-                total_harga += minPriceProduct.harga;
-
-                // Filter krim siang section
-                filtered_products = searched_products.filter(function(produk){
-                    return produk.tipe_skincare === "krim siang";
-                })
-
-                const krimSiangSelect = document.getElementById('krim_siang');
-                krimSiangSelect.innerHTML = ""
-                filtered_products.forEach(produk => {
-                    krimSiangSelect.innerHTML += `<option value="${produk.nama_produk.toLowerCase()}" selected>${produk.nama_produk}</option>`;
-                });
-
-                minPriceProduct = filtered_products.reduce((minProduct, currentProduct) => {
-                    return (currentProduct.harga < minProduct.harga) ? currentProduct : minProduct;
-                });
-
-                krimSiangSelect.selected = minPriceProduct.nama_produk
-                document.getElementById("img_krim_siang").src = `../assets/img/${minPriceProduct.img}`;
-                document.getElementById("harga_krim_siang").innerHTML = `Rp. ${minPriceProduct.harga}`;
-                total_harga += minPriceProduct.harga;
-
-                // Filter masker section
-                filtered_products = searched_products.filter(function(produk){
-                    return produk.tipe_skincare === "masker";
-                })
-
-                const maskerSelect = document.getElementById('masker');
-                maskerSelect.innerHTML = ""
-                filtered_products.forEach(produk => {
-                    maskerSelect.innerHTML += `<option value="${produk.nama_produk.toLowerCase()}" selected>${produk.nama_produk}</option>`;
-                });
-
-                minPriceProduct = filtered_products.reduce((minProduct, currentProduct) => {
-                    return (currentProduct.harga < minProduct.harga) ? currentProduct : minProduct;
-                });
-
-                maskerSelect.selected = minPriceProduct.nama_produk
-                document.getElementById("img_masker").src = `../assets/img/${minPriceProduct.img}`;
-                document.getElementById("harga_masker").innerHTML = `Rp. ${minPriceProduct.harga}`;
-                total_harga += minPriceProduct.harga;
+                return minPriceProduct.harga
+            }else{
+                document.getElementById(`img_${type.replace(" ", "_")}`).src = `../assets/img/unknown.png`;
+                document.getElementById(`harga_${type.replace(" ", "_")}`).innerHTML = `Rp. 0`;
             }
 
-            console.log(total_harga)
+            return 0
+        }
+
+        var total_harga;
+        function cariProduk(){
+            total_harga = 0;
+            jenis_kulit = document.getElementById("jenis_kulit").value;
+            if (jenis_kulit != "") {
+                searched_products = products.filter(function (produk) {
+                    return produk.jenis_kulit === "semua" || produk.jenis_kulit === jenis_kulit;
+                });
+
+                const skincareTypes = ["sabun", "toner", "serum", "krim malam", "krim siang", "masker"];
+
+                skincareTypes.forEach((type) => {
+                    minPrice = updateSkincareOptions(searched_products, type);
+                    total_harga += minPrice;
+                });
+
+                document.getElementById('total_harga').innerHTML = total_harga.toLocaleString('id-ID');
+            }
+        }
+
+        function onChange(jenis_produk) {
+            sabun = document.getElementById(jenis_produk).value;
+            filtered_products = products.filter(function (produk) {
+                return produk.nama_produk.toLowerCase() === sabun;
+            })[0];
+
+            selectElement = document.getElementById(jenis_produk.replace(" ", "_"));
+
+            selectElement.selected = filtered_products.nama_produk.toLowerCase();
+            document.getElementById(`img_${jenis_produk.replace(" ", "_")}`).src = `../assets/img/unknown.png`;
+            document.getElementById(`harga_${jenis_produk.replace(" ", "_")}`).innerHTML = `Rp. 0`;
+
+            console.log(filtered_products);
         }
     </script>
 

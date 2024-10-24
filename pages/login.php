@@ -46,6 +46,14 @@
 			<div class="col-sm-12 d-flex justify-content-center">
 				<div class="card mx-auto my-auto" style="width: 500px; min-height: 300px;">
 					<div class="card-body bg-pink color-custom">
+						<?php
+				    session_start();
+				    if (isset($_SESSION['error_message'])) {
+				        echo '<div class="alert alert-success alert-dismissible fade show" role="alert"><strong>'.$_SESSION['error_message'].'</strong></div>';
+				        // Hapus pesan setelah ditampilkan
+				        unset($_SESSION['error_message']);
+				    }
+				    ?>
 				    <div class="text-center">
 							<span><h3>SecretCare</h3></span>
 							<h5>Sign in</h5>

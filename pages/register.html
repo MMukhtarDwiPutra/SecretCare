@@ -33,10 +33,10 @@
             <a class="nav-link color-custom" href="cari_product.html">Cari Product</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link color-custom" href="contact_us.html">Contact Us</a>
+            <a class="nav-link color-custom" href="contact_us.php">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link color-custom" href="login.html">Login</a>
+            <a class="nav-link color-custom" href="login.php">Login</a>
           </li>
         </ul>
       </div>
@@ -49,11 +49,12 @@
 					<div class="card-body text-center bg-pink color-custom">
 						<span><h3>SecretCare</h3></span>
 						<h5>Register</h5>
-						<form class="mb-4" action="backend/register.php" method="POST">
+						<form class="mb-4" action="backend/proses_register.php" method="POST">
 							<div>
 								<input class="form-control mb-1" type="text" placeholder="Username" name="username">
+								<input class="form-control mb-1" type="email" placeholder="Email" name="email">
 								<input class="form-control mb-1" placeholder="Password" type="password" name="password">
-								<input class="form-control" placeholder="Confirm Password" type="password" name="password">
+								<input class="form-control" placeholder="Confirm Password" type="password" name="confirm_password">
 							</div>
 							<button type="submit" class="btn btn-custom mt-4">Register</button>
 						</form>

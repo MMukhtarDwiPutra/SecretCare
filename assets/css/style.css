@@ -103,3 +103,12 @@ html, body {
   justify-content: center;
   margin-top: 30px;
 }
+
+.card-body {
+    min-height: 280px;  Atur tinggi minimum untuk card 
+}
+
+.card img{
+  width: auto;
+  max-height: 350px;
+}

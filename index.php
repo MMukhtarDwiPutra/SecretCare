@@ -35,7 +35,11 @@
 	          <li class="nav-item">
 	            <a class="nav-link color-custom" href="pages/contact_us.php">Contact Us</a>
 	          </li>
-	      	  <li class="nav-item"><a class="nav-link color-custom" href="pages/login.php">Login</a></li>
+	          <?php if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true): ?>
+	          	<li class="nav-item"><a class="nav-link color-custom" href="pages/backend/proses_logout.php">Logout</a></li>
+	      	  <?php else: ?>
+	      	  	<li class="nav-item"><a class="nav-link color-custom" href="pages/login.php">Login</a></li>
+	      	  <?php endif; ?>
 	        </ul>
 	      </div>
 	    </div>
