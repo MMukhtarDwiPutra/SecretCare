@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecretCare | Cari Produk</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-pink">
+        <div class="container">
+          <span class="color-custom"><h5>SecretCare</h5></span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Gunakan 'ml-auto' di sini untuk mendorong item ke kanan -->
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link color-custom" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-custom" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-custom" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-custom" href="cari_product.html">Cari Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-custom" href="contact_us.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-custom" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Pilih Produk Skincare Anda</h2>
+        <form>
+            <div class="form-group mb-2">
+                <label for="jenis_kulit">Jenis Kulit</label>
+                <select class="form-control" id="jenis_kulit" name="jenis_kulit" required>
+                    <option value="">Pilih Jenis Kulit</option>
+                    <option value="normal">Normal</option>
+                    <option value="kering">Kering</option>
+                    <option value="berminyak">Berminyak</option>
+                    <option value="sensitif">Sensitif</option>
+                    <option value="kombinasi">Kombinasi</option>
+                </select>
+            </div>
+            <button type="button" onclick="cariProduk()" class="btn btn-primary mt-3">Cari Produk</button>
+        </form>
+    </div>
+
+    <div class="container bg-pink mt-5 mb-5">
+        <div class="row pb-4">
+            <div class="col-md-4">
+                <div class="card mt-3">
+                  <div class="card-header text-center">
+                      Sabun
+                  </div>
+                  <div class="card-body mt-1">
+                    <img class="card-img-top" id="img_sabun" src="../assets/img/unknown.png">
+                    <div class="card-title">
+                        <select class="form-control" id="sabun">
+                            <option>-- Pilih Sabun --</option>
+                        </select>
+                    </div>
+                    <p class="card-text" id="harga_sabun"></p>        
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mt-3">
+                  <div class="card-header text-center">
+                      Toner
+                  </div>
+                  <div class="card-body mt-1">
+                    <img class="card-img-top" id="img_toner" src="../assets/img/unknown.png">
+                    <div class="card-title">
+                        <select class="form-control" id="toner">
+                            <option>-- Pilih Toner --</option>
+                        </select>
+                    </div>
+                    <p class="card-text" id="harga_toner"></p>        
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mt-3">
+                  <div class="card-header text-center">
+                      Serum
+                  </div>
+                  <div class="card-body mt-1">
+                    <img class="card-img-top" id="img_serum" src="../assets/img/unknown.png">
+                    <div class="card-title">
+                        <select class="form-control" id="serum">
+                            <option>-- Pilih Serum --</option>
+                        </select>
+                    </div>
+                    <p class="card-text" id="harga_serum"></p>        
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mt-3">
+                  <div class="card-header text-center">
+                      Krim Malam
+                  </div>
+                  <div class="card-body mt-1">
+                    <img class="card-img-top" id="img_krim_malam" src="../assets/img/unknown.png">
+                    <div class="card-title">
+                        <select class="form-control" id="krim_malam">
+                            <option>-- Pilih Krim Malam --</option>
+                        </select>
+                    </div>
+                    <p class="card-text" id="harga_krim_malam"></p>        
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mt-3">
+                  <div class="card-header text-center">
+                      Krim Siang
+                  </div>
+                  <div class="card-body mt-1">
+                    <img class="card-img-top" id="img_krim_siang" src="../assets/img/unknown.png">
+                    <div class="card-title">
+                        <select class="form-control" id="krim_siang">
+                            <option>-- Pilih Krim Siang --</option>
+                        </select>
+                    </div>
+                    <p class="card-text" id="harga_krim_siang"></p>        
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mt-3">
+                  <div class="card-header text-center">
+                      Masker
+                  </div>
+                  <div class="card-body mt-1">
+                    <img class="card-img-top" id="img_masker" src="../assets/img/unknown.png">
+                    <div class="card-title">
+                        <select class="form-control" id="masker">
+                            <option>-- Pilih Masker --</option>
+                        </select>
+                    </div>
+                    <p class="card-text" id="harga_masker"></p>        
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-pink text-center mt-auto ">
+        <div class="container py-3">
+          <p class="color-custom d-flex justify-content-center my-auto">&copy; 2024 SecretCare</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        let products;
+
+        function fetchJSONData() {
+            fetch("../assets/json/data.json")
+                .then((res) => {
+                    if (!res.ok) {
+                        throw new Error
+                            (`HTTP error! Status: ${res.status}`);
+                    }
+                    return res.json();
+                })
+                .then((data) => {
+                        setProduct(data);
+                      })
+                .catch((error) =>
+                    console.error("Unable to fetch data:", error));
+        }
+
+        fetchJSONData();
+
+        function setProduct(data) {
+            products = data.data
+        }
+
+        function cariProduk(){
+            jenis_kulit = document.getElementById("jenis_kulit").value;
+            total_harga = 0;
+
+            if(jenis_kulit != ""){
+                searched_products = products.filter(function(produk){
+                    return produk.jenis_kulit === "semua" || produk.jenis_kulit === jenis_kulit 
+                })
+
+
+                // Filter sabun section
+                filtered_products = searched_products.filter(function(produk){
+                    return produk.tipe_skincare === "sabun";
+                })
+
+                const sabunSelect = document.getElementById('sabun');
+                sabunSelect.innerHTML = ""
+                filtered_products.forEach(produk => {
+                    sabunSelect.innerHTML += `<option value="${produk.nama_produk.toLowerCase()}" selected>${produk.nama_produk}</option>`;
+                });
+
+                let minPriceProduct = filtered_products.reduce((minProduct, currentProduct) => {
+                    return (currentProduct.harga < minProduct.harga) ? currentProduct : minProduct;
+                });
+
+                sabunSelect.selected = minPriceProduct.nama_produk
+                document.getElementById("img_sabun").src = `../assets/img/${minPriceProduct.img}`;
+                document.getElementById("harga_sabun").innerHTML = `Rp. ${minPriceProduct.harga}`;
+                total_harga += minPriceProduct.harga;
+
+                // Filter toner section
+                filtered_products = searched_products.filter(function(produk){
+                    return produk.tipe_skincare === "toner";
+                })
+
+                const tonerSelect = document.getElementById('toner');
+                tonerSelect.innerHTML = ""
+                filtered_products.forEach(produk => {
+                    tonerSelect.innerHTML += `<option value="${produk.nama_produk.toLowerCase()}" selected>${produk.nama_produk}</option>`;
+                });
+
+                minPriceProduct = filtered_products.reduce((minProduct, currentProduct) => {
+                    return (currentProduct.harga < minProduct.harga) ? currentProduct : minProduct;
+                });
+
+                tonerSelect.selected = minPriceProduct.nama_produk
+                document.getElementById("img_toner").src = `../assets/img/${minPriceProduct.img}`;
+                document.getElementById("harga_toner").innerHTML = `Rp. ${minPriceProduct.harga}`;
+                total_harga += minPriceProduct.harga;
+
+                // Filter serum section
+                filtered_products = searched_products.filter(function(produk){
+                    return produk.tipe_skincare === "serum";
+                })
+
+                const serumSelect = document.getElementById('serum');
+                serumSelect.innerHTML = ""
+                filtered_products.forEach(produk => {
+                    serumSelect.innerHTML += `<option value="${produk.nama_produk.toLowerCase()}" selected>${produk.nama_produk}</option>`;
+                });
+
+                minPriceProduct = filtered_products.reduce((minProduct, currentProduct) => {
+                    return (currentProduct.harga < minProduct.harga) ? currentProduct : minProduct;
+                });
+
+                serumSelect.selected = minPriceProduct.nama_produk
+                document.getElementById("img_serum").src = `../assets/img/${minPriceProduct.img}`;
+                document.getElementById("harga_serum").innerHTML = `Rp. ${minPriceProduct.harga}`;
+                total_harga += minPriceProduct.harga;
+
+                // Filter krim malam section
+                filtered_products = searched_products.filter(function(produk){
+                    return produk.tipe_skincare === "krim malam";
+                })
+
+                const krimMalamSelect = document.getElementById('krim_malam');
+                krimMalamSelect.innerHTML = ""
+                filtered_products.forEach(produk => {
+                    krimMalamSelect.innerHTML += `<option value="${produk.nama_produk.toLowerCase()}" selected>${produk.nama_produk}</option>`;
+                });
+
+                minPriceProduct = filtered_products.reduce((minProduct, currentProduct) => {
+                    return (currentProduct.harga < minProduct.harga) ? currentProduct : minProduct;
+                });
+
+                krimMalamSelect.selected = minPriceProduct.nama_produk
+                document.getElementById("img_krim_malam").src = `../assets/img/${minPriceProduct.img}`;
+                document.getElementById("harga_krim_malam").innerHTML = `Rp. ${minPriceProduct.harga}`;
+                total_harga += minPriceProduct.harga;
+
+                // Filter krim siang section
+                filtered_products = searched_products.filter(function(produk){
+                    return produk.tipe_skincare === "krim siang";
+                })
+
+                const krimSiangSelect = document.getElementById('krim_siang');
+                krimSiangSelect.innerHTML = ""
+                filtered_products.forEach(produk => {
+                    krimSiangSelect.innerHTML += `<option value="${produk.nama_produk.toLowerCase()}" selected>${produk.nama_produk}</option>`;
+                });
+
+                minPriceProduct = filtered_products.reduce((minProduct, currentProduct) => {
+                    return (currentProduct.harga < minProduct.harga) ? currentProduct : minProduct;
+                });
+
+                krimSiangSelect.selected = minPriceProduct.nama_produk
+                document.getElementById("img_krim_siang").src = `../assets/img/${minPriceProduct.img}`;
+                document.getElementById("harga_krim_siang").innerHTML = `Rp. ${minPriceProduct.harga}`;
+                total_harga += minPriceProduct.harga;
+
+                // Filter masker section
+                filtered_products = searched_products.filter(function(produk){
+                    return produk.tipe_skincare === "masker";
+                })
+
+                const maskerSelect = document.getElementById('masker');
+                maskerSelect.innerHTML = ""
+                filtered_products.forEach(produk => {
+                    maskerSelect.innerHTML += `<option value="${produk.nama_produk.toLowerCase()}" selected>${produk.nama_produk}</option>`;
+                });
+
+                minPriceProduct = filtered_products.reduce((minProduct, currentProduct) => {
+                    return (currentProduct.harga < minProduct.harga) ? currentProduct : minProduct;
+                });
+
+                maskerSelect.selected = minPriceProduct.nama_produk
+                document.getElementById("img_masker").src = `../assets/img/${minPriceProduct.img}`;
+                document.getElementById("harga_masker").innerHTML = `Rp. ${minPriceProduct.harga}`;
+                total_harga += minPriceProduct.harga;
+            }
+
+            console.log(total_harga)
+        }
+    </script>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

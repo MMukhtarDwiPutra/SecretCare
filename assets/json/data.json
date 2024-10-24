@@ -2,114 +2,114 @@
 	"data" :[{
 		"nama_produk" : "SKINTIFIC 5X Ceramide Barrier Repair Moisturize Gel Moisturizer 30G & 6G",
 		"deskripsi": "Moisturizer yang menggabungkan 3 kandungan aktif Ceramide, Hyaluronic Acid, dan Centella Asiatica, untuk mengatasi permasalahan skin barrier yang rusak seperti jerawat, kemerahan, kulit bertekstur, dan juga kulit kering secara cepat namun tetap aman untuk skin barrier.",
-		"jenis_kulit": "Kombinasi",
+		"jenis_kulit": "semua",
 		"img": "skintific_ceramide.png",
 		"tipe_skincare": "pelembab",
-		"harga": "50000",
+		"harga": 50000,
 		"merk": "skintific"
 		},{
 		"nama_produk" : "5X Ceramide Low PH Cleanser",
 		"deskripsi": "•Cleanser ini memiliki pH yang rendah (5.5~6) yang sangat sesuai dengan pH level kulit",
-		"jenis_kulit": "Kombinasi",
+		"jenis_kulit": "semua",
 		"img": "skintific_ceramide_cleanser.png",
 		"tipe_skincare": "sabun",
-		"harga": "99000",
+		"harga": 99000,
 		"merk": "skintific"
 		},{
 		"nama_produk" : "Skintific 5% AHA/BHA Exfoliating Toner",
 		"deskripsi": "Toner yang satu ini mengandung gabungan 5% AHA, BHA, dan PHA yang bisa mengangkat sel kulit mati serta mengatasi sebum berlebih secara gentle.",
-		"jenis_kulit": "Kombinasi",
+		"jenis_kulit": "normal",
 		"img": "skintifi_ex_toner.png",
 		"tipe_skincare": "toner",
-		"harga": "120000",
+		"harga": 120000,
 		"merk": "skintific"
 		},{
 		"nama_produk" : "Skintific 5X Ceramide Soothing Toner",
 		"deskripsi": "Produk itu bernama Skintific 5X Ceramide Soothing Toner. Seperti hydrating toner pada umumnya, skincare ini bisa digunakan sehari-hari.",
-		"jenis_kulit": "Kombinasi",
+		"jenis_kulit": "semua",
 		"img": "skintific_hydrating_toner.png",
 		"tipe_skincare": "toner",
-		"harga": "76000",
+		"harga": 76000,
 		"merk": "skintific"
 		},{
 		"nama_produk" : "Skintific 4D Hyaluronic Acid Barrier Essence Toner",
 		"deskripsi": "Toner yang satu ini menggunakan teknologi HymagicTM-4D Technology, kombinasi 4 tipe hyaluronic acid untuk melembapkan kulit hingga pori-pori terdalam.",
-		"jenis_kulit": "Kombinasi",
+		"jenis_kulit": "kombinasi",
 		"img": "4d_hydrating_toner.png",
 		"tipe_skincare": "toner",
-		"harga": "85000",
+		"harga": 85000,
 		"merk": "skintific"
 		},{
 		"nama_produk" : "Skintific 10% Niacinamide Brightening Serum",
 		"deskripsi": "Skintific 10% Niacinamide Brightening Serum mengandung 10% Niacinamide (sama dengan Niacinamide pada SK-II) yang efektif untuk mencerahkan kulit dengan cepat, mengontrol minyak berlebih, dan menyamarkan noda hitam.",
-		"jenis_kulit": "Kombinasi",
+		"jenis_kulit": "semua",
 		"img": "niacinamide_skintific_serum.png",
 		"tipe_skincare": "serum",
-		"harga": "11000",
+		"harga": 110000,
 		"merk": "skintific"
 		},{
 		"nama_produk" : "Skintific Gentle A-Retinol Renewal Serum",
 		"deskripsi": "Skintific Gentle A-Retinol Renewal Serum dilengkapi dengan 5x Ceramide dan 3D Peptide yang mampu mengunci kelembaban kulit, mencegah iritasi, serta mengurangi garis halus dan kerutan secara signifikan.",
-		"jenis_kulit": "Kombinasi",
+		"jenis_kulit": "normal",
 		"img": "skintific_retinol_serum.png",
 		"tipe_skincare": "serum",
-		"harga": "11000",
+		"harga": 110000,
 		"merk": "skintific"
 		},{
 		"nama_produk" : "10% Lactic + Glycolic Peeling Serum",
 		"deskripsi": "Serum glowing eksfoliasi dengan 7x glowing effect* untuk kulit normal & berminyak yang dapat mendukung regenerasi kulit baru, mencerahkan kulit lebih cepat, mengurangi komedo whitehead & blackhead, menyamarkan garis halus, hiperpigmentasi & noda bekas jerawat, tekstur dan pori-pori jadi lebih halus dalam 2 minggu**.",
-		"jenis_kulit": "Kombinasi",
+		"jenis_kulit": "berminyak",
 		"img": "somethinc_glycolic_serum.png",
 		"tipe_skincare": "serum",
-		"harga": "125000",
+		"harga": 125000,
 		"merk": "somethinc"
 		},{
 		"nama_produk" : "5% Mandelic Acid Mild Exfoliating Serum",
 		"deskripsi": "Serum glowing eksfoliasi yang gentle untuk kulit sensitif & berjerawat. Dengan konsentrasi 5% Mandelic Acid untuk mengangkat sel kulit mati dengan potensi iritasi yang sangat minim. Dapat mencerahkan kulit, mendukung regenerasi kulit baru, mengurangi komedo whitehead & blackhead, pori-pori jadi lebih halus dalam 2 minggu.",
-		"jenis_kulit": "Kombinasi",
+		"jenis_kulit": "sensitif",
 		"img": "mandelic_somethinc_serum.png",
 		"tipe_skincare": "serum",
-		"harga": "125000",
+		"harga": 125000,
 		"merk": "somethinc"
 		},{
 		"nama_produk" : "Calm Down! Skinpair Bubble Cleanser",
 		"deskripsi": "Bubble cleanser berformulasi vegan & pH-balanced yang membersihkan debu, sunscreen, makeup & kotoran dari aktivitas sehari-hari tanpa menghilangkan kelembapan esensial, sekaligus menenangkan kemerahan.",
-		"jenis_kulit": "Kombinasi",
+		"jenis_kulit": "sensitif",
 		"img": "calmdown_somethinc.png",
 		"tipe_skincare": "sabun",
-		"harga": "102000",
+		"harga": 102000,
 		"merk": "somethinc"
 		},{
 		"nama_produk" : "ACNEDOT Treatment Moisturizer Gel",
 		"deskripsi": "Pelembab wajah vegan dengan 5X Acne Combat Power yang membantu melawan bakteri penyebab jerawat, memperkecil tampilan pori, mengontrol sebum minyak berlebih, & mengurangi jerawat dalam 28 hari*",
-		"jenis_kulit": "Kombinasi",
+		"jenis_kulit": "berminyak",
 		"img": "acnedot_somethinc.png",
 		"tipe_skincare": "pelembab",
-		"harga": "89000",
+		"harga": 89000,
 		"merk": "somethinc"
 		},{
 		"nama_produk" : "Calm Down! PHA 3% Soothing Everyday Toner",
-		"deskripsi": "Soothing Toner yang diformulasikan dengan Madagascar Centella Asiatica & Adaptogenic Cherimoya untuk menenangkan kulit kemerahan, sensitif, & teriritasi ringan. Dilengkapi 3% PHA yang efektif mengangkat kotoran serta sel kulit mati penyebab komedo & kulit kusam. ",
-		"jenis_kulit": "Kombinasi",
+		"deskripsi": "Soothing Toner yang diformulasikan dengan Madagascar Centella Asiatica & Adaptogenic Cherimoya untuk menenangkan kulit kemerahan, sensitif, & teriritasi ringan. Dilengkapi 3% PHA yang efektif mengangkat kotoran serta sel kulit mati penyebab komedo & kulit kusam.",
+		"jenis_kulit": "normal",
 		"img": "calm_stc.png",
 		"tipe_skincare": "toner",
-		"harga": "62000",
+		"harga": 62000,
 		"merk": "somethinc"
 		},{
 		"nama_produk" : "ACNEDOT Treatment Toner",
 		"deskripsi": "Toner pH balance vegan untuk kulit berjerawat yang membantu memperkecil tampilan pori & menyeimbangkan minyak berlebih pada wajah. Dengan kandungan 5X Acne Combat Power & 91% Korean Green Tea Water untuk melawan bakteri penyebab jerawat sekaligus menenangkan kemerahan pada kulit berjerawat.",
-		"jenis_kulit": "Kombinasi",
+		"jenis_kulit": "berminyak",
 		"img": "acnedot_stc.png",
 		"tipe_skincare": "toner",
-		"harga": "70000",
+		"harga": 70000,
 		"merk": "somethinc"
 		},{
 		"nama_produk" : "Your Skin Bae Vitamin C Wrinkle Balm Moisturizing Stick (9.5 g)",
 		"deskripsi": "Multi balm yang praktis digunakan untuk melembapkan kulit, membantu menyamarkan garis halus dan kerutan, serta mengandung vitamin c untuk membantu meratakan warna kulit dan kaya antioksidan. ",
-		"jenis_kulit": "Kombinasi",
+		"jenis_kulit": "normal",
 		"img": "vitc_avoskin.png",
 		"tipe_skincare": "toner",
-		"harga": "144000",
+		"harga": 144000,
 		"merk": "avoskin"
 		},{
 		"nama_produk" : "Facial Cleanser Avoskin Your Skin Bae Kojic Acid 100ml-Kulit Kusam",
@@ -117,15 +117,15 @@
 		"jenis_kulit": "berminyak",
 		"img": "kojic_avoskin.png",
 		"tipe_skincare": "sabun",
-		"harga": "86000",
+		"harga": 86000,
 		"merk": "avoskin"
 		},{
 		"nama_produk" : "Facial Cleanser Avoskin Your Skin Bae Spirulina 100ml-Kulit Berjerawat",
 		"deskripsi": "Daily acne cleanser dengan tekstur gel lembut yang membantu membersihkan wajah dari debu, kotoran, minyak, dan sisa make up. Produk ini dilengkapi dengan serum serta active ingredient yaitu Spirulina, Witch Hazel, Glycolic Acid yang berfungsi untuk membersihkan pori-pori kulit, membantu mencegah timbulnya jerawat, membantu kulit tampak lebih cerah, dan menenangkan kulit.",
-		"jenis_kulit": "jerawat",
+		"jenis_kulit": "berminyak",
 		"img": "spirulina_avoskin.png",
 		"tipe_skincare": "sabun",
-		"harga": "86000",
+		"harga": 86000,
 		"merk": "avoskin"
 		},{
 		"nama_produk" : "Serum Avoskin Your Skin Bae Tranexamic Acid 30ml-Samarkan PIH & PIE",
@@ -133,7 +133,7 @@
 		"jenis_kulit": "berminyak",
 		"img": "trax_avoskin_serum.png",
 		"tipe_skincare": "serum",
-		"harga": "126000",
+		"harga": 126000,
 		"merk": "avoskin"
 		},{
 		"nama_produk" : "Serum Avoskin Your Skin Bae Mandelic Acid 30ml-Eksfoliasi & Jerawat",
@@ -141,7 +141,7 @@
 		"jenis_kulit": "berminyak",
 		"img": "mandelic_avoskin_serum.png",
 		"tipe_skincare": "serum",
-		"harga": "118000",
+		"harga": 118000,
 		"merk": "avoskin"
 		},{
 		"nama_produk" : "Vitamin C + 8X NMF Amino Radiant Charge Gel Cleanser",
@@ -149,15 +149,15 @@
 		"jenis_kulit": "semua",
 		"img": "vitc_wardah_sabun.png",
 		"tipe_skincare": "sabun",
-		"harga": "85000",
+		"harga": 85000,
 		"merk": "wardah"
 		},{
 		"nama_produk" : "Heartleaf + 8X NMF Amino Calm & Soothe Gel Cleanser",
 		"deskripsi": "Pembersih wajah yang gentle namun efektif dengan Wardah Heartleaf + 8x NMF Amino Calm & Soothe Gel Cleanser. Diformulasikan tidak hanya membersihkan tetapi juga membantu meredakan iritasi dan menenangkan kemerahan kulit, bantu menenangkan dan menghidrasi kulit.",
-		"jenis_kulit": "jerawat",
+		"jenis_kulit": "berminyak",
 		"img": "amino_wardah_sabun.png",
 		"tipe_skincare": "sabun",
-		"harga": "85000",
+		"harga": 85000,
 		"merk": "wardah"
 		},{
         "nama_produk": "Wardah Perfect Bright Moisturizer SPF 28",
@@ -165,7 +165,7 @@
         "jenis_kulit": "semua",
         "img": "wardah_perfect_bright.png",
         "tipe_skincare": "pelembap",
-        "harga": "32000",
+        "harga": 32000,
         "merk": "wardah"
 	    },{
 	        "nama_produk": "Wardah Lightening Night Cream",
@@ -173,7 +173,7 @@
 	        "jenis_kulit": "semua",
 	        "img": "wardah_lightening_night.png",
 	        "tipe_skincare": "krim malam",
-	        "harga": "50000",
+	        "harga": 50000,
 	        "merk": "wardah"
 	    },
 	    {
@@ -182,7 +182,7 @@
 	        "jenis_kulit": "kering",
 	        "img": "wardah_aloe_hydramild.png",
 	        "tipe_skincare": "gel",
-	        "harga": "40000",
+	        "harga": 40000,
 	        "merk": "wardah"
 	    },
 	    {
@@ -191,7 +191,7 @@
 	        "jenis_kulit": "semua",
 	        "img": "wardah_renew_you_day.png",
 	        "tipe_skincare": "krim siang",
-	        "harga": "75000",
+	        "harga": 75000,
 	        "merk": "wardah"
 	    },
 	    {
@@ -200,7 +200,7 @@
 	        "jenis_kulit": "semua",
 	        "img": "wardah_c_defense_serum.png",
 	        "tipe_skincare": "serum",
-	        "harga": "85000",
+	        "harga": 85000,
 	        "merk": "wardah"
 	    },{
         "nama_produk": "Emina Bright Stuff Face Wash",
@@ -208,7 +208,7 @@
         "jenis_kulit": "semua",
         "img": "emina_bright_stuff_face_wash.png",
         "tipe_skincare": "sabun",
-        "harga": "25000",
+        "harga": 25000,
         "merk": "emina"
 	    },
 	    {
@@ -217,7 +217,7 @@
 	        "jenis_kulit": "semua",
 	        "img": "emina_sun_protection.png",
 	        "tipe_skincare": "tabir surya",
-	        "harga": "27000",
+	        "harga": 27000,
 	        "merk": "emina"
 	    },
 	    {
@@ -226,16 +226,16 @@
 	        "jenis_kulit": "kering",
 	        "img": "emina_bright_stuff_moisturizing_cream.png",
 	        "tipe_skincare": "pelembap",
-	        "harga": "28000",
+	        "harga": 28000,
 	        "merk": "emina"
 	    },
 	    {
 	        "nama_produk": "Emina Ms. Pimple Acne Solution Face Wash",
 	        "deskripsi": "Sabun pembersih wajah dengan formula khusus untuk kulit berjerawat. Mengandung Salicylic Acid untuk membersihkan pori-pori dan mengurangi minyak berlebih.",
-	        "jenis_kulit": "jerawat",
+	        "jenis_kulit": "berminyak",
 	        "img": "emina_ms_pimple_acne_solution_face_wash.png",
 	        "tipe_skincare": "sabun",
-	        "harga": "32000",
+	        "harga": 32000,
 	        "merk": "emina"
 	    },
 	    {
@@ -244,7 +244,7 @@
 	        "jenis_kulit": "normal",
 	        "img": "emina_green_tea_latte_face_mask.png",
 	        "tipe_skincare": "masker",
-	        "harga": "25000",
+	        "harga": 25000,
 	        "merk": "emina"
 	    },
 	    {
@@ -253,7 +253,7 @@
 	        "jenis_kulit": "semua",
 	        "img": "emina_bright_stuff_tone_up_cream.png",
 	        "tipe_skincare": "krim pencerah",
-	        "harga": "33000",
+	        "harga": 33000,
 	        "merk": "emina"
 	    },
 	    {
@@ -262,7 +262,7 @@
 	        "jenis_kulit": "kering",
 	        "img": "emina_moist_in_a_bottle.png",
 	        "tipe_skincare": "pelembap",
-	        "harga": "45000",
+	        "harga": 45000,
 	        "merk": "emina"
 	    },{
 	        "nama_produk": "Lacoco Aloe Vera Soothing Mist",
@@ -270,7 +270,7 @@
 	        "jenis_kulit": "semua",
 	        "img": "lacoco_aloe_vera_soothing_mist.png",
 	        "tipe_skincare": "mist",
-	        "harga": "125000",
+	        "harga": 125000,
 	        "merk": "lacoco"
 	    },
 	    {
@@ -279,7 +279,7 @@
 	        "jenis_kulit": "kering",
 	        "img": "lacoco_hydrating_divine_essence.png",
 	        "tipe_skincare": "essence",
-	        "harga": "195000",
+	        "harga": 195000,
 	        "merk": "lacoco"
 	    },
 	    {
@@ -288,7 +288,7 @@
 	        "jenis_kulit": "normal",
 	        "img": "lacoco_ultimate_golden_swallow_facial_foam.png",
 	        "tipe_skincare": "sabun",
-	        "harga": "175000",
+	        "harga": 175000,
 	        "merk": "lacoco"
 	    },
 	    {
@@ -297,7 +297,7 @@
 	        "jenis_kulit": "semua",
 	        "img": "lacoco_dark_spot_essence.png",
 	        "tipe_skincare": "essence",
-	        "harga": "215000",
+	        "harga": 215000,
 	        "merk": "lacoco"
 	    },
 	    {
@@ -306,7 +306,7 @@
 	        "jenis_kulit": "semua",
 	        "img": "lacoco_watermelon_glow_mask.png",
 	        "tipe_skincare": "masker malam",
-	        "harga": "185000",
+	        "harga": 185000,
 	        "merk": "lacoco"
 	    },
 	    {
@@ -315,7 +315,7 @@
 	        "jenis_kulit": "semua",
 	        "img": "lacoco_intensive_treatment_eye_serum.png",
 	        "tipe_skincare": "serum mata",
-	        "harga": "225000",
+	        "harga": 225000,
 	        "merk": "lacoco"
 	    },
 	    {
@@ -324,7 +324,7 @@
 	        "jenis_kulit": "berminyak",
 	        "img": "lacoco_amazonian_charcoal_glow_mask.png",
 	        "tipe_skincare": "masker",
-	        "harga": "200000",
+	        "harga": 200000,
 	        "merk": "lacoco"
 	    }
 	]
